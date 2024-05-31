@@ -15,5 +15,20 @@ module.exports = {
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		// quotes: ["error", "double"],
 		quotes: "off",	// 關閉字串單雙引號檢查
+		indent: ["error", "tab"],
+		// "no-tabs": ["error", { allowIndentationTabs: true }],
+		"no-tabs": "off",
+		'vuejs-accessibility/label-has-for': [
+			'error',
+			{
+				components: ['Label'],
+				// controlComponents: ['input', 'Field'],
+				controlComponents: ['input', 'vee-field'],
+				required: {
+					every: ['nesting', 'id'],
+				},
+				allowChildren: false,
+			},
+		],
 	},
 };
