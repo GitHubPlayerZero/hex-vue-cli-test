@@ -3,28 +3,24 @@
 		<img alt="Vue logo" src="../assets/logo.png" />
 		<HelloWorld msg="Welcome to Your Vue.js App" />
 
+		<!-- 這邊不太一樣的是，元件名稱不需要使用烤肉串寫法。 -->
 		<VeeForm v-slot="{ errors, values, validate }" @submit="onSubmit">
 			{{ errors }} {{ values }}
 
 			<div class="mb-3">
-				<label for="email" class="form-label"
-					>Email
-					<VeeField
-						id="email"
-						name="email"
-						type="email"
-						class="form-control"
-						:class="{ 'is-invalid': errors['email'] }"
-						placeholder="請輸入 Email"
-						rules="email|required"
-						v-model="user.email"
-					></VeeField>
-				</label>
-
-				<VeeErrorMessage
+				<label for="email" class="form-label">Email </label>
+				<VeeField
+					id="email"
 					name="email"
-					class="invalid-feedback"
-				></VeeErrorMessage>
+					type="email"
+					class="form-control"
+					:class="{ 'is-invalid': errors['email'] }"
+					placeholder="請輸入 Email"
+					rules="email|required"
+					v-model="user.email"
+				></VeeField>
+
+				<VeeErrorMessage name="email" class="invalid-feedback"></VeeErrorMessage>
 			</div>
 
 			<button
