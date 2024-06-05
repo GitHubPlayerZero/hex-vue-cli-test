@@ -45,5 +45,8 @@ module.exports = {
 		// 	"asyncArrow": "ignore"
 		// }],
 		"space-before-function-paren": "off",
+		
+		// 不檢查函式和它的括號之間的空白
+		"func-call-spacing": "off",
 	},
 };
