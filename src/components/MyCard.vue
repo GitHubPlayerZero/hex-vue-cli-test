@@ -14,6 +14,8 @@
 </template>
 
 <script>
+// import 'bootstrap';
+
 export default {
 	data() {
 		return {
@@ -22,3 +24,7 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss">
+// @import 'bootstrap';
+</style>

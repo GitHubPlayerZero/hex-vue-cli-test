@@ -1,0 +1,13 @@
+<template>
+	<h2>命名視圖</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<router-view name="left"></router-view>
+			</div>
+			<div class="col">
+				<router-view name="right"></router-view>
+			</div>
+		</div>
+	</div>
+</template>

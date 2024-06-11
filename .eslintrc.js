@@ -48,5 +48,9 @@ module.exports = {
 		
 		// 不檢查函式和它的括號之間的空白
 		"func-call-spacing": "off",
+		"no-spaced-func": "off",
+		
+		// 不強制解構
+		"prefer-destructuring": "off",
 	},
 };
