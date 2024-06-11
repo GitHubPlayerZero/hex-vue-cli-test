@@ -21,19 +21,13 @@ const routes = [
 		component: () => import('../views/NewPage.vue'),
 	},
 	{
-		path: '/newpage',
-		name: '新增頁面',
-		component: () => import('../views/NewPage.vue'),
-	},
-	{
 		path: '/nestedpage',
 		name: '巢狀路由頁面',
 		component: () => import('../views/NestedPage.vue'),
 		children: [
-			// 預設會顯示的頁面
 			{
 				path: '',
-				name: 'nestedDefault',
+				name: '巢狀路由預設頁面',
 				component: () => import ('../views/PageDefault.vue'),
 			},
 			{
@@ -46,6 +40,7 @@ const routes = [
 			},
 			{
 				path: 'dynamicRouter/:id',
+				name: '動態路由頁面',
 				component: () => import ('../views/DynamicRouter.vue'),
 			},
 			{
@@ -53,10 +48,9 @@ const routes = [
 				name: '具名視圖頁面',
 				component: () => import ('../views/NamedView.vue'),
 				children: [
-					// 預設顯示的畫面
 					{
 						path: '',
-						name: 'namedViewDefault',
+						name: '具名視圖預設頁面',
 						components: {
 							left: () => import ('../views/PageDefault.vue'),
 							// right: () => import ('../views/PageDefault.vue'),

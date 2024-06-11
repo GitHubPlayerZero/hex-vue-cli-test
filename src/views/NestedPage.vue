@@ -37,7 +37,7 @@
 						to="/nestedpage/dynamicRouter/bf1469ac2805f040"
 						class="list-group-item list-group-item-action"
 					>
-						動態路由 (4cd652256cdcd3b0)
+						動態路由 (bf1469ac2805f040)
 					</router-link>
 					<router-link
 						to="/nestedpage/dynamicRouter/7e83b534c3d7fc96"
