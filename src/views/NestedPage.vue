@@ -45,6 +45,29 @@
 					>
 						動態路由 (7e83b534c3d7fc96)
 					</router-link>
+					<router-link
+						to="/nestedpage/props"
+						class="list-group-item list-group-item-action"
+					>
+						Props
+					</router-link>
+					<router-link
+						to="/nestedpage/dynamicRouterProps/7e83b534c3d7fc96"
+						class="list-group-item list-group-item-action"
+					>
+						動態路由 + Props
+					</router-link>
+					<router-link
+						to="/nestedpage/dynamicRouterProps2/7e83b534c3d7fc96"
+						class="list-group-item list-group-item-action"
+					>
+						動態路由 + Props (true)
+					</router-link>
+					<router-link to="/nestedpage/routerNavigation"
+						class="list-group-item list-group-item-action"
+					>
+						路由導覽
+					</router-link>
 				</div>
 			</div>
 			<div class="col">

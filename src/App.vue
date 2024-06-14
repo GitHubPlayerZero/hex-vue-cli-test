@@ -42,6 +42,21 @@
 							動態路由
 						</router-link>
 					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/nestedpage/props">
+							Props
+						</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/nestedpage/dynamicRouterProps/7e83b534c3d7fc96">
+							動態路由 + Props
+						</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/nestedpage/routerNavigation">
+							路由導覽
+						</router-link>
+					</li>
 					<!-- <li class="nav-item dropdown">
 						<a
 							class="nav-link dropdown-toggle"
@@ -100,6 +115,9 @@
 		<router-link to="/nestedpage">巢狀路由</router-link> |
 		<router-link to="/nestedpage/namedView">命名視圖</router-link> |
 		<router-link to="/nestedpage/dynamicRouter/bf1469ac2805f040">動態路由</router-link> |
+		<router-link to="/nestedpage/props">Props</router-link> |
+		<router-link to="/nestedpage/dynamicRouterProps/7e83b534c3d7fc96">動態路由 + Props</router-link> |
+		<router-link to="/nestedpage/routerNavigation">路由導覽</router-link> |
 	</nav>
 
 	<div class="container">

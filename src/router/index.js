@@ -39,11 +39,6 @@ const routes = [
 				component: () => import ('../views/PageB.vue'),
 			},
 			{
-				path: 'dynamicRouter/:id',
-				name: '動態路由頁面',
-				component: () => import ('../views/DynamicRouter.vue'),
-			},
-			{
 				path: 'namedView',
 				name: '具名視圖頁面',
 				component: () => import ('../views/NamedView.vue'),
@@ -71,6 +66,42 @@ const routes = [
 						},
 					},
 				],
+			},
+			{
+				path: 'dynamicRouter/:id',
+				name: '動態路由頁面',
+				component: () => import ('../views/DynamicRouter.vue'),
+			},
+			{
+				path: 'props',
+				name: '給入固定的 Props',
+				component: () => import ('../views/DynamicRouterProps.vue'),
+				props: () => ({
+					id: 'bf1469ac2805f040',
+				}),
+			},
+			{
+				path: 'dynamicRouterProps/:id',
+				name: '動態路由與 Props (參數) 頁面',
+				component: () => import ('../views/DynamicRouterProps.vue'),
+				props: (route) => {
+					console.log(`[dynamicRouterProps] route ==>`, route);
+					return {
+						id: route.params.id,
+					};
+				},
+			},
+			{
+				path: 'dynamicRouterProps2/:id',
+				name: '動態路由與 Props (參數) 頁面 2',
+				component: () => import ('../views/DynamicRouterProps.vue'),
+				// 當 props 設為 true 時，route.params 將被設為組件的 props。
+				props: true,
+			},
+			{
+				path: 'routerNavigation',
+				name: '路由導覽頁面',
+				component: () => import ('../views/RouterNavigation.vue'),
 			},
 		],
 	},
