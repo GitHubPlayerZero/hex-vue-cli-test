@@ -34,7 +34,7 @@ module.exports = {
 		// 		allowChildren: false,
 		// 	},
 		// ],
-		
+
 		// 關閉 label 檢查
 		'vuejs-accessibility/label-has-for': 'off',
 
@@ -45,12 +45,28 @@ module.exports = {
 		// 	"asyncArrow": "ignore"
 		// }],
 		"space-before-function-paren": "off",
-		
+
 		// 不檢查函式和它的括號之間的空白
 		"func-call-spacing": "off",
 		"no-spaced-func": "off",
-		
+
 		// 不強制解構
 		"prefer-destructuring": "off",
+
+		// 允許空行及註解的空格
+		"no-trailing-spaces": ["error", {
+			skipBlankLines: true,
+			ignoreComments: true,
+		}],
+
+		// 允許空白的行數
+		"no-multiple-empty-lines": ["error", {
+			"max": 3,
+		}],
+		
+		// 不檢查函式中沒有使用的參數
+		"no-unused-vars": ["error", {
+			"args": "none",
+		}],
 	},
 };
